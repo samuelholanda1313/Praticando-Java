@@ -6,6 +6,7 @@ public class Cachorro {
     public int altura;
     public double peso;
     public int tamanhoDoRabo;
+    public String estadoDeEspirito;
 
     @Override
     public String toString() {
@@ -19,8 +20,19 @@ public class Cachorro {
     }
 
     public void comer(){};
-    public void latir(){
-        System.out.println("Au Au");
+    public String latir(){
+        return "Au Au";
     }
-
+    public String pegar (){
+       return "Bolinha";
+    }
+    public String interagir (String acao){
+        if (acao.equals("Carinho")) {
+            this.estadoDeEspirito="O cachorro esta feliz";
+        } else if (acao.equals("Gritar com o cachorro")) {
+            this.estadoDeEspirito="Cachorro esta bravo";
+        } else {
+            this.estadoDeEspirito="O cachorro esta Neutro";
+        } return this.estadoDeEspirito;
+    }
 }
