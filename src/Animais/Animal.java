@@ -7,8 +7,22 @@ public class Animal {
     protected double peso;
     protected String estadoDeEspirito;
 
-    void comer(){}
-    void dormir(){}
-    void soar () {
+        public Animal(String nome, String cor, int altura, double peso, String estadoDeEspirito) {
+            this.nome = nome;
+            this.cor = cor;
+            this.altura = altura;
+            this.peso = peso;
+            this.estadoDeEspirito = estadoDeEspirito;
+        }
+
+        public Animal(String nome, String cor, double peso, String estadoDeEspirito) {
+        }
+
+        public void comer(){}
+        public void dormir(){}
+        public void soar () {
         System.out.println("Cri Cri Cri");
-    }}
+
+    }
+
+}

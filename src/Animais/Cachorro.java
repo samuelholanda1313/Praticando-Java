@@ -6,7 +6,8 @@ public class Cachorro extends Animal{
 
     private int tamanhoDoRabo;
 
-    public Cachorro() {
+    public Cachorro(String nome, String cor, int altura, double peso, String estadoDeEspirito, int tamanhoDoRabo) {
+        super("nome","cor",2, 5,"feliz");
 
     }
 
@@ -41,6 +42,7 @@ public class Cachorro extends Animal{
 
     //CONSTRUCTOR da classe, que defini os atributos como parametro padrao do OBJETO "Cachorro"
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
+        super("nome","cor",2, 5,"feliz");
         this.nome = nome;
         this.cor = cor;
         this.altura = altura;
